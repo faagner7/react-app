@@ -7,6 +7,7 @@ import PrivateRoute from "./PrivateRoute";
 
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
+import CustomersPage from "../pages/CustomersPage";
 
 const AppRouter = () => {
   return (
@@ -14,6 +15,12 @@ const AppRouter = () => {
       <Switch>
         <PrivateRoute path="/" exact title="Home" component={HomePage} />
         <Route path="/login" exact component={LoginPage} />
+        <PrivateRoute
+          path="/customers"
+          exact
+          title="Customers"
+          component={CustomersPage}
+        />
       </Switch>
     </Router>
   );
