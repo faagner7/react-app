@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const DashboardContainer = ({ children, title }) => {
+const PrivateContainer = ({ children, title }) => {
   document.title = `${title} - Sistema`;
   return (
     <>
-      <h1> menu- ROLA</h1>
+      <h1>NAV BAR PRIVATE CONTAINER</h1>
       <main>{children}</main>
     </>
   );
 };
 
-DashboardContainer.propTypes = {
+PrivateContainer.propTypes = {
   children: PropTypes.element,
   title: PropTypes.string,
 };
 
-DashboardContainer.defaultProps = {
+PrivateContainer.defaultProps = {
   children: <></>,
   title: "",
 };
 
-export default DashboardContainer;
+export default PrivateContainer;

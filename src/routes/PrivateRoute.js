@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import PropTypes from "prop-types";
-import DashboardContainer from "../containers/DashboardContainer";
+import PrivateContainer from "../containers/PrivateContainer";
 
 import { Route, Redirect } from "react-router-dom";
 
@@ -13,9 +13,9 @@ const PrivateRoute = ({ component: Component, title, ...rest }) => {
       {...rest}
       render={(props) =>
         loggedIn ? (
-          <DashboardContainer title={title}>
+          <PrivateContainer title={title}>
             <Component {...props} />
-          </DashboardContainer>
+          </PrivateContainer>
         ) : (
           <Redirect
             to={{

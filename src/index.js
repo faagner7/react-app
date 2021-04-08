@@ -8,3 +8,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// index.js.             nele colocamos o componente AppContainer

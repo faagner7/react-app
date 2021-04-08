@@ -1,11 +1,11 @@
 import React from "react";
-import PresentationContainer from "../../containers/PresentationContainer";
+import PublicContainer from "../../containers/PublicContainer";
 
 function LoginPage() {
   return (
-    <PresentationContainer>
+    <PublicContainer>
       <h1>login</h1>
-    </PresentationContainer>
+    </PublicContainer>
   );
 }
 

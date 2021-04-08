@@ -17,3 +17,6 @@ const AppContainer = () => {
 };
 
 export default AppContainer;
+
+// CSS baseline resetador CssBaseline
+// AppRouter componente com as rotas

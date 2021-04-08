@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const PresentationContainer = ({ children }) => {
+const PublicContainer = ({ children }) => {
   return <div>{children}</div>;
 };
 
-PresentationContainer.propTypes = {
+PublicContainer.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-export default PresentationContainer;
+export default PublicContainer;
