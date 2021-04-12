@@ -1,9 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./index.public.css";
 
 const PublicContainer = ({ children }) => {
-  return <div>{children}</div>;
-};
+  return(
+   <>
+   <nav>
+      <ul>
+      <li>BISTECA SISTEMAS</li>
+        </ul>
+</nav>
+
+      <div>{children}</div>
+
+   </>
+  )};
 
 PublicContainer.propTypes = {
   children: PropTypes.element.isRequired,
