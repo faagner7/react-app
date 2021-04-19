@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Router } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 import history from "../helpers/history";
 
@@ -14,7 +14,7 @@ const AppRouter = () => {
   return (
     <Router history={history}>
       <Switch>
-        <Route path="/login" exact component={LoginPage} />
+        <Route exact path="/login" component={LoginPage} />
         <PrivateRoute path="/" exact title="Home" component={HomePage} />
         <PrivateRoute
           path="/customers"
