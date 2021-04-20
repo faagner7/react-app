@@ -10,8 +10,6 @@ const useStyles = makeStyles(styles);
 const PrivateContainer = ({ children, title }) => {
   const classes = useStyles();
   document.title = `${title} - Sistema`;
-  // const history = useHistory();
-
   // eslint-disable-next-line react/display-name
   const ForwardNavLink = forwardRef((props, ref) => (
     <div ref={ref} style={{ flexGrow: 1 }}>
