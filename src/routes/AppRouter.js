@@ -9,6 +9,7 @@ import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import CustomersPage from "../pages/CustomersPage";
 import ProductsPage from "../pages/ProductsPage";
+import CovidPage from "../pages/CovidPage"
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,15 @@ const AppRouter = () => {
           title="Produtos"
           component={ProductsPage}
         />
+        <PrivateRoute
+          path="/covid"
+          exact
+          title="Dados Covid"
+          component={CovidPage}
+
+        />
+
+
       </Switch>
     </Router>
   );

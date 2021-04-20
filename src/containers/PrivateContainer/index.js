@@ -7,9 +7,9 @@ import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const PrivateContainer = ({ children, title }) => {
+const PrivateContainer = (props) => {
   const classes = useStyles();
-  document.title = `${title} - Sistema`;
+  document.title = `${props.title} - Sistema`;
   // eslint-disable-next-line react/display-name
   const ForwardNavLink = forwardRef((props, ref) => (
     <div ref={ref} style={{ flexGrow: 1 }}>
@@ -31,6 +31,10 @@ const PrivateContainer = ({ children, title }) => {
       title: "Produtos",
       href: "/products",
     },
+    {
+      title: "Dados Covid",
+      href: "/covid"
+    },
   ];
   return (
     <>
@@ -50,7 +54,7 @@ const PrivateContainer = ({ children, title }) => {
           ))}
         </List>
       </nav>
-      <main>{children}</main>
+      <main>{props.children}</main>
     </>
   );
 };

@@ -10,7 +10,6 @@ export default () => ({
   },
   li: {
     display: 'inline-block',
-    // paddingLeft: '10px',
     position: 'relative',
     margin: 'auto',
     color: 'black',

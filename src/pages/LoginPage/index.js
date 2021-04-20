@@ -5,7 +5,7 @@ import PublicContainer from "../../containers/PublicContainer";
 function LoginPage() {
   return (
     <PublicContainer>
-      <h1>login</h1>
+      <h1>Login</h1>
       <TextField
         label="E-mail"
       />
