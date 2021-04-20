@@ -1,19 +1,20 @@
 export default () => ({
   nav: {
     backgroundColor: 'red',
-    padding: '20px',
   },
   navList: {
     display: 'flex',
     flexDirection: 'row',
     color: '#fff',
+    padding: 0,
   },
   li: {
     display: 'inline-block',
-    paddingLeft: '10px',
+    // paddingLeft: '10px',
     position: 'relative',
     margin: 'auto',
-    color: 'black'
+    color: 'black',
+    textAlign: 'center'
   },
   activeListItem: {
     backgroundColor: '#ffff',
