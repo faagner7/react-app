@@ -1,13 +1,14 @@
 import React, { forwardRef } from "react";
-import { List, ListItem, ListItemText } from "@material-ui/core";
+import { List, ListItem, ListItemText, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-
 import PropTypes from "prop-types";
-// import { useHistory } from "react-router-dom";
-// import history from "../../helpers/history";
-import "./index.private.css";
+
+import styles from './styles';
+
+const useStyles = makeStyles(styles);
 
 const PrivateContainer = ({ children, title }) => {
+  const classes = useStyles();
   document.title = `${title} - Sistema`;
   // const history = useHistory();
 
@@ -35,14 +36,16 @@ const PrivateContainer = ({ children, title }) => {
   ];
   return (
     <>
-      <nav>
-        <List component="div" className="navList">
+      <nav className={classes.nav}>
+        <List component="div" className={classes.navList}>
           {pages.map((page) => (
             <ListItem
               to={page.href}
               exact={page.exact}
               component={ForwardNavLink}
               key={page.title}
+              className={classes.li}
+              activeClassName={classes.activeListItem}
             >
               <ListItemText>{page.title}</ListItemText>
             </ListItem>
